@@ -15,8 +15,8 @@ CREATE TABLE EMPLOYEE (
     Gender CHAR(1) NOT NULL CHECK (Gender IN ('M','F')),
     DNO INT NOT NULL,
     SupervisorSSN CHAR(9),
-    FOREIGN KEY (DNO) REFERENCES DEPARTMENT(DNUM),
-    FOREIGN KEY (SupervisorSSN) REFERENCES EMPLOYEE(SSN)
+    Constraint emp_DNO_fk FOREIGN KEY (DNO) REFERENCES DEPARTMENT(DNUM),
+   Constraint SUPER_FK FOREIGN KEY (SupervisorSSN) REFERENCES EMPLOYEE(SSN)
 );
 
 -- 3. Add foreign key constraint for ManagerSSN in DEPARTMENT (after EMPLOYEE created)
