@@ -8,7 +8,7 @@ INSERT INTO DEPARTMENT (DNUM, DName, ManagerSSN, ManagerStartDate) VALUES
 
 -- Insert Employees
 INSERT INTO EMPLOYEE (SSN, Fname, Lname, BirthDate, Gender, DNO, SupervisorSSN) VALUES
-('123456789', 'Yousef', 'Ahmed', '1980-05-10', 'M', 1, NULL),        
+('123456789', 'Yousef', 'Ahmed', '1980-05-10', 'M', 1, '7464623828'),        
 ('987654321', 'Mohamed', 'Ali', '1985-08-15', 'M', 2, '123456789'),    
 ('555555555', 'Omar', 'Saeed', '1990-12-20', 'M', 3, '123456789'),     
 ('111222333', 'Ahmed', 'Khaled', '1992-09-25', 'M', 4, '987654321');
